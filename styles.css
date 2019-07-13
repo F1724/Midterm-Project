@@ -1,0 +1,14 @@
+#main-section {
+    background-color: #84ffff;
+    height: 100vh;
+}
+
+#home-section {
+    background-color: #84ffff;
+    height: 110vh;
+    padding-top: 10%;
+}
+
+html {
+    scroll-behavior: smooth;
+} 

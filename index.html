@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js"></script>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <div id="home-section">
+        <div class="center-align">
+            <h1>Fidyah Calculator</h1>
+            <h5>This is a simple web app to calculate your Fidyah</h5>
+            <br />
+            <h5>Formula: cost of 100g of staple food x the number of days you need to fast </h5>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="numberOfDays" type="number">
+                    <label for="numberOfDays">number of days</label>
+                    <span class="helper-text" id="pages" data-error="wrong" data-success="right">Enter the number of
+                        days you did
+                        not fast</span>
+                </div>
+            </div>
+            <button class="btn-large waves-effect waves-light  cyan accent-4" type="submit" name="action"
+                onclick="calculateFidyah()">Calculate
+                <i class="material-icons right">send</i>
+            </button>
+            <br />
+            <div class="card  light-blue darken-4">
+                <div class="card-content white-text">
+                    <span id="answer" class="card-title">Your results will display here after you click the 'Calculate'
+                        button.</span>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+</body>
+
+</html>
